@@ -1,6 +1,6 @@
 import React from "react";
 
-function App() {
+function App(): React.ReactElement {
   return (
     <div className="flex">
       <div className="flex-none w-48 relative">
