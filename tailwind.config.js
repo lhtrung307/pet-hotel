@@ -7,5 +7,14 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [
+    function ({ addComponents }) {
+      const borderColor = {
+        ".border-t-transparent": {
+          borderTopColor: "transparent !important"
+        }
+      };
+      addComponents(borderColor);
+    }
+  ]
 };
