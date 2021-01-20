@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind screens;
+
+.side-menu {
+  @apply flex;
+  @apply items-center;
+  @apply h-12;
+  @apply relative;
+  @apply pl-5;
+  @apply rounded-full;
+}
+
+.side-menu:not(.side-menu--active):hover { 
+  @apply bg-blue-600;
+}
+
+.side-menu--active {
+  @apply bg-gray-50;
+  @apply text-black;
+}
