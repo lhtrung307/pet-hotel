@@ -172726,3 +172726,24 @@ video {
     animation: bounce 1s infinite;
   }
 }
+
+.side-menu {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  position: relative;
+  padding-left: 1.25rem;
+  border-radius: 9999px;
+}
+
+.side-menu:not(.side-menu--active):hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+}
+
+.side-menu--active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
