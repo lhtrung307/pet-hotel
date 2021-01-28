@@ -1,7 +1,8 @@
 import React, { ReactElement } from "react";
 
-const Home = React.lazy(() => import("Home"));
-const About = React.lazy(() => import("About"));
+const Home = React.lazy(() => import("pages/Home"));
+const Room = React.lazy(() => import("pages/Room"));
+const About = React.lazy(() => import("pages/About"));
 
 interface RouteObject {
   path: string;
@@ -24,7 +25,7 @@ export const routes: RouteObject[] = [
     exact: true,
     icon: "Icon",
     pathName: "ROOM_MANAGEMENT",
-    component: About
+    component: Room
   },
   {
     path: "/about",
